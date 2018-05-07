@@ -48,6 +48,22 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+  <groupId>org.codehaus.cargo</groupId>
+  <artifactId>cargo-maven2-plugin</artifactId>
+  <configuration>
+    <configuration>
+      <properties>
+        <cargo.remote.uri>jmx://jonas1</cargo.remote.uri>
+        <cargo.jonas.domain.name>jonas</cargo.jonas.domain.name>
+        <cargo.remote.username>admin</cargo.remote.username>
+        <cargo.remote.password>root</cargo.remote.password>
+      </properties>
+    </configuration>
+  </configuration>
+</plugin>
 			</plugins>
   </build>
+ 
+
 </project>
